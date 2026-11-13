@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- Coder Compare, version 1.4. Copyright (c) 2026 Taylor G. Morales Long. Released under the MIT License. Embedded fonts: IBM Plex Sans and IBM Plex Mono, SIL Open Font License 1.1. -->
+<!-- Coder Compare, version 1.5. Copyright (c) 2026 Taylor G. Morales Long. Released under the MIT License. Embedded fonts: IBM Plex Sans and IBM Plex Mono, SIL Open Font License 1.1. -->
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -309,7 +309,7 @@ button,.btn,input[type=text],select{font-size:15px}
     <div class="scroll"><table id="conf-table"><thead><tr><th>One code</th><th>Other code</th><th class="num-cell">Times</th></tr></thead><tbody></tbody></table></div>
   </div>
 </section>
-<p class="small muted">Version 1.4, 13 November 2026. Created by Taylor G. Morales Long. An independent helper for files made with ELAN (The Language Archive, Max Planck Institute for Psycholinguistics). Not affiliated with ELAN.</p>
+<p class="small muted">Version 1.5, 13 November 2026. Created by Taylor G. Morales Long. If you use this tool in your research, please cite it: Morales Long, T. G. (2026). <i>Coder Compare</i> (Version 1.5) [Computer software]. Zenodo. <a href="https://doi.org/10.5281/zenodo.24209256" target="_blank" rel="noopener">https://doi.org/10.5281/zenodo.24209256</a>. An independent helper for files made with ELAN (The Language Archive, Max Planck Institute for Psycholinguistics). Not affiliated with ELAN.</p>
 </main>
 <div id="toast" role="status" aria-live="polite"></div>
 
@@ -640,7 +640,7 @@ var CC = (function(){
       P.push([q[0], q[1], q[2], q[3], {f: 'SUMPRODUCT(' + both + '*(' + uR(cFlag + 1) + '="")*(' + uR(cFlag + 2) + '=""))'}, {f: 'SUMPRODUCT(' + both + ')'}]);
     });
     // Read me
-    var note = [[{bold: true, v: 'Coder Compare: Excel check file'}], ['Made ' + info.date + ' with version ' + info.version + '. Tiers compared: ' + info.tiers.join(', ') + '. Capital letters in codes: ' + (ic ? 'ignored' : 'count as different') + '.'], [''],
+    var note = [[{bold: true, v: 'Coder Compare: Excel check file'}], ['Made ' + info.date + ' with Coder Compare version ' + info.version + ' (https://doi.org/10.5281/zenodo.24209256). Tiers compared: ' + info.tiers.join(', ') + '. Capital letters in codes: ' + (ic ? 'ignored' : 'count as different') + '.'], [''],
       [{bold: true, v: 'What each sheet is'}],
       ['Summary: counts per recording. Every number is an Excel formula that counts rows on the other sheets, so you can click a cell to see how it was worked out.'],
       ['Utterances: one row per utterance, with every coder side by side. The Missing, Different tier, Different timing, Different code and Group columns are formulas that read the coder cells in the same row.'],
@@ -927,7 +927,7 @@ if (typeof module !== 'undefined') module.exports = CC;
     var R = state.result;
     if (!R || !R.rows.length){ toast('Nothing to save yet.'); return; }
     var name = 'coder-compare-check.xlsx', now = new Date(), pad = function(n){ return (n < 10 ? '0' : '') + n; };
-    var info = {date: now.getFullYear() + '-' + pad(now.getMonth() + 1) + '-' + pad(now.getDate()), version: '1.4', tiers: Object.keys(selected()).sort()};
+    var info = {date: now.getFullYear() + '-' + pad(now.getMonth() + 1) + '-' + pad(now.getDate()), version: '1.5', tiers: Object.keys(selected()).sort()};
     toast('Building the Excel file...');
     CC.buildWorkbook(R, state.meta, info).then(function(bytes){
       var blob = new Blob([bytes], {type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'});
