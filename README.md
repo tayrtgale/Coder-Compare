@@ -1,5 +1,7 @@
-# Coder-Compare
-Tool for establishing inter-coder reliability in ELAN in a timely and efficient manner - Support tool for research purposes - Not affiliated with ELAN 
+[README.md](https://github.com/user-attachments/files/34829713/README.md)
+# Coder Compare
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24209256.svg)](https://doi.org/10.5281/zenodo.24209256)
 
 Finds where coders disagree in their ELAN files.
 
@@ -61,7 +63,29 @@ The author designed the tool, decided how it should work, and tested it. The cod
 
 ## How to cite
 
-Morales Long, T. G. (2026). *Coder Compare: finds coder disagreements in ELAN files* (Version 1.4) [Computer software].
+If you use Coder Compare in your research, please cite it:
+
+> Morales Long, T. G. (2026). *Coder Compare: Finds coder disagreements in ELAN files* (Version 1.5) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.24209256
+
+That DOI always points to the latest version. To cite the exact version you used, open the Zenodo page and copy the DOI listed for that version.
+
+A sentence you can adapt for a methods section:
+
+> Disagreements between coders were identified using Coder Compare (Version 1.5; Morales Long, 2026) and resolved through discussion. Inter-coder reliability was calculated in ELAN.
+
+BibTeX:
+
+```
+@software{moraleslong2026codercompare,
+  author    = {Morales Long, Taylor G.},
+  title     = {Coder Compare: Finds coder disagreements in ELAN files},
+  year      = {2026},
+  version   = {1.5},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.24209256},
+  url       = {https://doi.org/10.5281/zenodo.24209256}
+}
+```
 
 ## License
 
