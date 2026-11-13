@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use Coder Compare in your research, please cite it as below."
+type: software
+title: "Coder Compare: finds coder disagreements in ELAN files"
+abstract: "A single-file web tool that compares coders' ELAN annotation files and lists every disagreement, mistimed, misplaced or missing annotation by recording and time stamp."
+authors:
+  - family-names: "Morales Long"
+    given-names: "Taylor G."
+version: "1.2"
+date-released: 2026-11-13
+license: MIT
+keywords:
+  - ELAN
+  - inter-coder reliability
+  - annotation
+  - behavioral coding
