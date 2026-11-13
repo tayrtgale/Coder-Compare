@@ -6,9 +6,14 @@ abstract: "A single-file web tool that compares coders' ELAN annotation files an
 authors:
   - family-names: "Morales Long"
     given-names: "Taylor G."
-version: "1.2"
+version: "1.5"
 date-released: 2026-11-13
 license: MIT
+doi: 10.5281/zenodo.24209256
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.24209256
+    description: "DOI for all versions of Coder Compare. It always resolves to the latest version."
 keywords:
   - ELAN
   - inter-coder reliability
